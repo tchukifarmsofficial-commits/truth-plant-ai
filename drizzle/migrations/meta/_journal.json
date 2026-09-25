@@ -1,0 +1,20 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1790339745523,
+      "tag": "0000_create_tchuki_farms_schema",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1790339775641,
+      "tag": "0001_storage_policies_app_images",
+      "breakpoints": true
+    }
+  ]
+}
