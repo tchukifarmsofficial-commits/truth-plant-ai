@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
 import { useApp } from '../../contexts/AppContext';
 import { supabase } from '../../lib/supabase';
-import logoAsset from '@/assets/tchuki-farms-logo.png.asset.json';
+import logoAsset from '@/assets/tchuki-farms-logo.png';
 import { Eye, EyeOff, Phone, Lock, User, MapPin, Leaf, ArrowRight, Check } from 'lucide-react';
 
-const LOGO_URL = logoAsset.url;
+const LOGO_URL = logoAsset;
 
 interface RegisterProps {
   onSwitchToLogin: () => void;
@@ -245,3 +245,4 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
     </div>
   );
 }
+

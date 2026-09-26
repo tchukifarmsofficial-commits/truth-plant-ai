@@ -1,12 +1,12 @@
 import React from 'react';
 import { useApp } from '../../contexts/AppContext';
-import logoAsset from '@/assets/tchuki-farms-logo.png.asset.json';
+import logoAsset from '@/assets/tchuki-farms-logo.png';
 import {
   Leaf, MessageSquare, Cloud, TrendingUp,
   BookOpen, Users, Mail, Phone, MapPin, ChevronRight, Droplets, Sun, Bug,
 } from 'lucide-react';
 
-const LOGO_URL = logoAsset.url;
+const LOGO_URL = logoAsset;
 
 const features = [
   { icon: Leaf, title: ['Plant Doctor', 'Dokotala wa Zomera'], desc: ['Scan a sick crop photo and get a real AI diagnosis with treatment steps.', 'Fotokozerani zomera zakumu ndipo mudzapeza chithunzi chenicheni chachiponda.'], color: 'text-primary-600 bg-primary-50' },
@@ -141,3 +141,4 @@ export default function Welcome({ onGetStarted }: WelcomeProps) {
     </div>
   );
 }
+

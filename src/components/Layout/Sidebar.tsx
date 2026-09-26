@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { useApp } from '../../contexts/AppContext';
 import { supabase } from '../../lib/supabase';
 import { Notification } from '../../types';
-import logoAsset from '@/assets/tchuki-farms-logo.png.asset.json';
+import logoAsset from '@/assets/tchuki-farms-logo.png';
 
-const LOGO_URL = logoAsset.url;
+const LOGO_URL = logoAsset;
 import {
   Home, Leaf, Bug, SprayCan, Cloud,
   TrendingUp, MessageSquare, BookOpen, Users,
@@ -271,3 +271,4 @@ export function TopBar({ onMenuClick }: { onMenuClick: () => void }) {
     </header>
   );
 }
+
