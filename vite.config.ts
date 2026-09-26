@@ -18,12 +18,17 @@ export default defineConfig({
 
     VitePWA({
       registerType: "autoUpdate",
+      strategies: "generateSW",
+      injectRegister: "auto",
+      filename: "sw.js",
+
       manifest: {
         name: "Tchuki Farms Plant Doctor AI",
         short_name: "Tchuki Plant Doctor",
         description:
           "AI-powered plant diagnosis and farming assistant by Tchuki Farms.",
         start_url: "/",
+        scope: "/",
         display: "standalone",
         background_color: "#ffffff",
         theme_color: "#ffffff",
